@@ -90,3 +90,18 @@ console.log(myStr2);
 
 console.log(myStr2.length);
 console.log(myStr2[myStr2.length-1]);
+
+function wordBlank(myNoun,myAdjective,myVerb,myAdverb){
+
+var result = "";
+
+result += `The ${myAdjective} ${myNoun} ${myVerb} to the store ${myAdverb}.`
+
+
+return result
+}
+console.log(wordBlank("dog","big","ran","quickly"));
+console.log(wordBlank("bike","slow","flew","slowly"));
+
+// Arrays:--
+
