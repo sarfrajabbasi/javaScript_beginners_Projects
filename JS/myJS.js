@@ -134,21 +134,31 @@ console.log(ourArray.pop());
 
 console.log(ourArray);
 
-
 // manipluate with shift and unshift
 
 console.log(ourArray.shift());
-ourArray.unshift([1,2],12,"12");
+ourArray.unshift([1, 2], 12, "12");
 console.log(ourArray);
 
-let myList = [["ceral",2],["milk",2],["helo",4],["chips",100],["mango",12]];
+let myList = [
+  ["ceral", 2],
+  ["milk", 2],
+  ["helo", 4],
+  ["chips", 100],
+  ["mango", 12],
+];
 
-function resuableCode(name){
-    console.log(name);
+function resuableCode(name) {
+  console.log(name);
 }
-resuableCode("holaHull")
-resuableCode("kill me")
-resuableCode("MorganFreeTestrone")
-resuableCode("Mickhel NotAMen")
-resuableCode("Billy TheGay")
-resuableCode("pushpa Chirkut")
+
+function ourResuableCode(name){
+    console.log("Not \n Marrid still " + name);
+}
+resuableCode("holaHull");
+resuableCode("kill me");
+resuableCode("Morgan FreeTestrone");
+resuableCode("Mickhel NotAMen");
+resuableCode("Billy ThGay");
+resuableCode("pushpa Chirkut");
+ourResuableCode("pushpa Chirkut");
