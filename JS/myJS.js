@@ -152,8 +152,8 @@ function resuableCode(name) {
   console.log(name);
 }
 
-function ourResuableCode(name){
-    console.log("Not \n Marrid still " + name);
+function ourResuableCode(name) {
+  console.log("Not \n Marrid still " + name);
 }
 resuableCode("holaHull");
 resuableCode("kill me");
@@ -163,7 +163,33 @@ resuableCode("Billy ThGay");
 resuableCode("pushpa Chirkut");
 ourResuableCode("pushpa Chirkut");
 
-function ourFunctionWithArg(a,b){
-    console.log(a-b);
+function ourFunctionWithArg(a, b) {
+  console.log(a - b);
 }
-ourFunctionWithArg(10,9)
+ourFunctionWithArg(10, 9);
+
+function FunctionWithArg(a, b) {
+  console.log(a + b);
+}
+FunctionWithArg(10, 9);
+
+// global scope(visibility of variable) and local scope
+
+var myGlobal = 10;
+function fun1() {
+oopsGlobal =5;
+}
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal:" + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal:" + oopsGlobal;
+  }
+  console.log(output);
+}
+
+fun1();
+fun2();
