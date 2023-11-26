@@ -85,3 +85,8 @@ let myName = "sarfraj";
 let myStr2 = "My name is " + myName + " and I am Well!";
 
 console.log(myStr2);
+
+// find length and char at specific index.but string are immutable data type
+
+console.log(myStr2.length);
+console.log(myStr2[myStr2.length-1]);
