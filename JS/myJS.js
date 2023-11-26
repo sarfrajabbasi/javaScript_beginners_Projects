@@ -89,19 +89,66 @@ console.log(myStr2);
 // find length and char at specific index.but string are immutable data type
 
 console.log(myStr2.length);
-console.log(myStr2[myStr2.length-1]);
+console.log(myStr2[myStr2.length - 1]);
 
-function wordBlank(myNoun,myAdjective,myVerb,myAdverb){
+function wordBlank(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "";
 
-var result = "";
+  result += `The ${myAdjective} ${myNoun} ${myVerb} to the store ${myAdverb}.`;
 
-result += `The ${myAdjective} ${myNoun} ${myVerb} to the store ${myAdverb}.`
-
-
-return result
+  return result;
 }
-console.log(wordBlank("dog","big","ran","quickly"));
-console.log(wordBlank("bike","slow","flew","slowly"));
+console.log(wordBlank("dog", "big", "ran", "quickly"));
+console.log(wordBlank("bike", "slow", "flew", "slowly"));
 
 // Arrays:--
 
+let ourArray = ["John", 23];
+
+// nested array
+let myArray = [
+  ["the uni", 34],
+  ["unknown beast", 76],
+];
+
+// access arr with [] notation
+
+console.log(ourArray[0]);
+
+// modifed array data with Indexes
+
+ourArray[0] = ["hello beautiful girls"];
+console.log(ourArray[0]);
+
+// access multi-dimesntional array
+console.log(ourArray[0][0]);
+
+// manipulate arrays with push()
+
+ourArray.push(["no you can't do this to meee :("]);
+
+console.log(ourArray[2].join());
+
+// manipulate arrays with pop()
+console.log(ourArray.pop());
+
+console.log(ourArray);
+
+
+// manipluate with shift and unshift
+
+console.log(ourArray.shift());
+ourArray.unshift([1,2],12,"12");
+console.log(ourArray);
+
+let myList = [["ceral",2],["milk",2],["helo",4],["chips",100],["mango",12]];
+
+function resuableCode(name){
+    console.log(name);
+}
+resuableCode("holaHull")
+resuableCode("kill me")
+resuableCode("MorganFreeTestrone")
+resuableCode("Mickhel NotAMen")
+resuableCode("Billy TheGay")
+resuableCode("pushpa Chirkut")
