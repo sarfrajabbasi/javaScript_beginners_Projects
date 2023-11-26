@@ -51,11 +51,37 @@ console.log(allMe + thenCall + callMe);
 
 // Declare String var
 
-let firstName = "Sarfraj";
+let firstName = " Sarfraj";
 let lastName = " Abbasi";
 
-// Escaping Literal Quotes in Strings
-let mylife = "Succk all \"thing mess up an no hope in my \"life becoz \" those mental\" peace"
+// Escaping Literal Quotes in Strings(it just a quotestion mark)
+let mylife =
+  'Succk all "thing mess up an no hope in my "life becoz " those mental" peace';
 
 console.log(firstName + lastName);
+mylife += firstName;
 console.log(mylife);
+
+/*
+\' --> single quote
+\" --> double quote
+\\ --> backslash
+\n --> newline
+\r -->  carriage return
+\t -->  tab
+\b --> backspace
+\f --> form feed
+*/
+let myStr = "FirstLine\n NewLine";
+
+console.log(myStr);
+
+let ourName = "freeCodeCamp";
+
+let ourStr = "Hello, our name is " + ourName + ", how are you?";
+
+let myName = "sarfraj";
+
+let myStr2 = "My name is " + myName + " and I am Well!";
+
+console.log(myStr2);
