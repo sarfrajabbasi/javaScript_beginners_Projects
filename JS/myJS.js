@@ -9,6 +9,10 @@
 // var & let is changable and but const is not. 
 
 var a = "abc";
+//   var a(declare) & = "abc"(initialized it)
   a = 134;
 let b = "aa";
 const c = 1;
+
+// var and functions are caSe sensitive.
+
