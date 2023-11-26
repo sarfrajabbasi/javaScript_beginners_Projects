@@ -162,3 +162,8 @@ resuableCode("Mickhel NotAMen");
 resuableCode("Billy ThGay");
 resuableCode("pushpa Chirkut");
 ourResuableCode("pushpa Chirkut");
+
+function ourFunctionWithArg(a,b){
+    console.log(a-b);
+}
+ourFunctionWithArg(10,9)
