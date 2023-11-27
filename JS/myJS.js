@@ -448,4 +448,36 @@ function caseInSwitch(val) {
   }
   return answar;
 }
-console.log( caseInSwitch(1));
+console.log(caseInSwitch(1));
+
+// multiple identical options
+
+function caseInSwitch2(val) {
+  var answar = "";
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answar = "Low";
+
+      break;
+
+    case 4:
+    case 5:
+    case 6:
+      answar = "Medium";
+
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answar = "High";
+
+      break;
+    default:
+      "invalid";
+      break;
+  }
+  return answar;
+}
+console.log(caseInSwitch2(9));
