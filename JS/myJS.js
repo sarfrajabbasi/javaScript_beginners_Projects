@@ -481,3 +481,11 @@ function caseInSwitch2(val) {
   return answar;
 }
 console.log(caseInSwitch2(9));
+
+
+// return  boolean from func
+
+function isless(a,b){
+return a < b
+}
+console.log(isless(23,20));
