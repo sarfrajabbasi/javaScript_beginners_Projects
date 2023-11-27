@@ -325,20 +325,19 @@ function test1(val) {
 }
 test1(12);
 
-
 // else statment
 
 function test2(val) {
-  var result = ""
-  if(val > 10){
-    result = "Bigger than 5"
-  }else if(val < 5){
-    result = "5 or smaller"
-  }else{
-    result = "B/W 5 and 10"
+  var result = "";
+  if (val > 10) {
+    result = "Bigger than 5";
+  } else if (val < 5) {
+    result = "5 or smaller";
+  } else {
+    result = "B/W 5 and 10";
   }
 
-  return result
+  return result;
 }
 
 // test
@@ -347,17 +346,73 @@ console.log(test2(11));
 // logical order in if/else
 
 function test3(val) {
-  var result = ""
-  if(val < 10){
-    result = "less than 10"
-  }else if(val < 5){
-    result = "less than 5 "
-  }else{
-    result = "Grater then or equla to 10"
+  var result = "";
+  if (val < 10) {
+    result = "less than 10";
+  } else if (val < 5) {
+    result = "less than 5 ";
+  } else {
+    result = "Grater then or equla to 10";
   }
 
-  return result
+  return result;
 }
 
 // test
-console.log(test2(7));
+console.log(test3(7));
+
+// chaining if else
+
+// else statment
+
+function test4(val) {
+  var result = "";
+  if (val < 5) {
+    result = "Tinny";
+  } else if (val < 10) {
+    result = "Small";
+  } else if (val < 15) {
+    result = "Medium";
+  } else if (val < 20) {
+    result = "Large";
+  } else {
+    return "huge";
+  }
+
+  return result;
+}
+
+// test
+console.log(test4(29));
+
+// golf  code
+var namesArr = [
+  "Hole-in-one",
+  "Eagle",
+  "Bridie",
+  "Par",
+  "Bogey",
+  "Double Bogey",
+  "abc",
+  "apt",
+  "jackass",
+];
+function golfScore(par, stroke) {
+  if (stroke == 1) {
+    return namesArr[0];
+  } else if (stroke <= par - 2) {
+    return namesArr[1];
+  } else if (stroke == par - 1) {
+    return namesArr[2];
+  } else if (stroke == par) {
+    return namesArr[3];
+  } else if (stroke == par + 1) {
+    return namesArr[4];
+  } else if (stroke == par + 2) {
+    return namesArr[5];
+  } else if (stroke == par + 3) {
+    return namesArr[6];
+  }
+}
+
+console.log(golfScore(5, 4));;
