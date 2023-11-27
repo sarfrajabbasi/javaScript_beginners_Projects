@@ -210,7 +210,6 @@ function myLocalScope() {
   console.log(myVar);
 }
 
-
 myLocalScope();
 // console.log(myVar);
 
@@ -229,14 +228,78 @@ function minusSeven(num) {
 
 console.log(minusSeven(10));
 
-
-function nextInLine(arr,item){
+function nextInLine(arr, item) {
   arr.push(item);
-  return arr.shift()
+  return arr.shift();
 }
 
-var textArr = [1,2,3,4,5]
+var textArr = [1, 2, 3, 4, 5];
 
 console.log("Before: " + JSON.stringify(textArr));
-console.log(nextInLine(textArr,6));
+console.log(nextInLine(textArr, 6));
 console.log("After: " + JSON.stringify(textArr));
+
+// Boolean Values and if/else statement
+
+function ourTrueOrFalse(isItTrue) {
+  if (isItTrue) {
+    return "Yes, it's true ";
+  }
+  return "No, it's false";
+}
+
+function trueOrFalse(wasThatTrue) {
+  return wasThatTrue ? "That was 1" : "That was 0";
+}
+
+// test equal
+function testEqual(val) {
+  if (val === 12) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// console
+console.log(ourTrueOrFalse(true));
+console.log(ourTrueOrFalse(false));
+console.log(trueOrFalse(true));
+console.log(trueOrFalse(false));
+
+console.log(testEqual(10));
+
+// Comparison with the strict Equality Operator
+
+/*
+
+3 === 3
+3 ==="3"
+
+*/
+
+function tripleComparison(val1, val2) {
+  return val1 == val2 ? "Equal" : "Not-Equal";
+}
+
+// test
+console.log(tripleComparison(10,"10"));
+
+// Inequality operator
+
+function inequalityOper(val1, val2) {
+  return val1 !== val2 ? "Not-Equal" : "Equal";
+}
+
+// test
+console.log(inequalityOper(10,"10"));
+
+
+// Logical and Operator
+
+function logicalOper(val1, val2) {
+  // return val1 >= val2 ? "Not-Equal" : "Equal";
+  return val1 <= val2 ? "Not-Equal" : "Equal";
+}
+
+// test
+console.log(logicalOper(10,"10"));
