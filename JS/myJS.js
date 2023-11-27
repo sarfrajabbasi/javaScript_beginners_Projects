@@ -194,10 +194,23 @@ function fun2() {
 fun1();
 fun2();
 
+// local sc0pe
+
+var outerWear = "T-Shirt";
+
+function myOutFit() {
+  var outerWear = "Sweater";
+  return outerWear;
+}
+
+console.log(myOutFit());
+
 function myLocalScope() {
   var myVar = 5;
   console.log(myVar);
 }
+
+
 myLocalScope();
 // console.log(myVar);
 
@@ -216,3 +229,14 @@ function minusSeven(num) {
 
 console.log(minusSeven(10));
 
+
+function nextInLine(arr,item){
+  arr.push(item);
+  return arr.shift()
+}
+
+var textArr = [1,2,3,4,5]
+
+console.log("Before: " + JSON.stringify(textArr));
+console.log(nextInLine(textArr,6));
+console.log("After: " + JSON.stringify(textArr));
