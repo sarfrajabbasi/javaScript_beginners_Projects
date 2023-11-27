@@ -330,14 +330,34 @@ test1(12);
 
 function test2(val) {
   var result = ""
-  if(val > 5){
+  if(val > 10){
     result = "Bigger than 5"
-  }else{
+  }else if(val < 5){
     result = "5 or smaller"
+  }else{
+    result = "B/W 5 and 10"
   }
 
   return result
 }
 
 // test
-console.log(test2(10,"10"));
+console.log(test2(11));
+
+// logical order in if/else
+
+function test3(val) {
+  var result = ""
+  if(val < 10){
+    result = "less than 10"
+  }else if(val < 5){
+    result = "less than 5 "
+  }else{
+    result = "Grater then or equla to 10"
+  }
+
+  return result
+}
+
+// test
+console.log(test2(7));
