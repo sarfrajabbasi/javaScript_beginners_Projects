@@ -415,4 +415,37 @@ function golfScore(par, stroke) {
   }
 }
 
-console.log(golfScore(5, 4));;
+console.log(golfScore(5, 4));
+
+// switch statement
+
+function caseInSwitch(val) {
+  var answar = "";
+  switch (val) {
+    case 1:
+      answar = "alpha";
+
+      break;
+
+    case 2:
+      answar = "beta";
+
+      break;
+
+    case 3:
+      answar = "gamma";
+
+      break;
+
+    case 4:
+      answar = "delta";
+
+      break;
+
+    default:
+      "invalid";
+      break;
+  }
+  return answar;
+}
+console.log( caseInSwitch(1));
