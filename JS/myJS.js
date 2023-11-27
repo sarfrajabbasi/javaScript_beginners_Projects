@@ -282,7 +282,7 @@ function tripleComparison(val1, val2) {
 }
 
 // test
-console.log(tripleComparison(10,"10"));
+console.log(tripleComparison(10, "10"));
 
 // Inequality operator
 
@@ -291,8 +291,7 @@ function inequalityOper(val1, val2) {
 }
 
 // test
-console.log(inequalityOper(10,"10"));
-
+console.log(inequalityOper(10, "10"));
 
 // Logical and Operator
 
@@ -302,8 +301,7 @@ function logicalOper(val1, val2) {
 }
 
 // test
-console.log(logicalOper(10,"10"));
-
+console.log(logicalOper(10, "10"));
 
 // And/Or operator
 
@@ -313,16 +311,33 @@ function logicalOper(val1, val2) {
 }
 
 // test
-console.log(logicalOper(10,"10"));
+console.log(logicalOper(10, "10"));
 
-function test1(val){
-  if(val < 10){
-    return "less then 10"
+function test1(val) {
+  if (val < 10) {
+    return "less then 10";
   }
-  if(val < 20){
-    return "less then 20"
+  if (val < 20) {
+    return "less then 20";
   }
 
-  return "inside the both"
+  return "inside the both";
 }
-test1(12)
+test1(12);
+
+
+// else statment
+
+function test2(val) {
+  var result = ""
+  if(val > 5){
+    result = "Bigger than 5"
+  }else{
+    result = "5 or smaller"
+  }
+
+  return result
+}
+
+// test
+console.log(test2(10,"10"));
