@@ -482,10 +482,58 @@ function caseInSwitch2(val) {
 }
 console.log(caseInSwitch2(9));
 
-
 // return  boolean from func
 
-function isless(a,b){
-return a < b
+function isless(a, b) {
+  return a < b;
 }
-console.log(isless(23,20));
+console.log(isless(23, 20));
+
+// return Early pattern for functions
+
+function abTest(a, b) {
+  if (a < 0 || b < 0) {
+    return undefined;
+  }
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+console.log(abTest(1, 2));
+
+// Counting cards
+
+var count = 0;
+function cCards(card) {
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "K":
+    case "Q":
+    case "A":
+      count--;
+      break;
+
+    default:
+      "not a card";
+      break;
+  }
+  var holdBet ="Hold";
+  if(count > 0){
+    holdBet =="Bet"
+  }
+  return count + " " + holdBet
+}
+cCards(2);
+cCards(3);
+cCards(7);
+cCards("K");
+cCards("A");
+console.log(cCards(4));
+
