@@ -177,7 +177,7 @@ FunctionWithArg(10, 9);
 
 var myGlobal = 10;
 function fun1() {
-oopsGlobal =5;
+  oopsGlobal = 5;
 }
 
 function fun2() {
@@ -194,24 +194,25 @@ function fun2() {
 fun1();
 fun2();
 
-function myLocalScope(){
-    var myVar = 5;
-    console.log(myVar);
+function myLocalScope() {
+  var myVar = 5;
+  console.log(myVar);
 }
-myLocalScope()
+myLocalScope();
 // console.log(myVar);
 
-var meChan = "Cat"
+var meChan = "Cat";
 
-function doremonFriend(){
-    // var meChan = "DOG"
-    return meChan
+function doremonFriend() {
+  // var meChan = "DOG"
+  return meChan;
 }
 
 console.log(doremonFriend());
 
-function minusSeven(num){
-    return num -7
+function minusSeven(num) {
+  return num - 7;
 }
 
 console.log(minusSeven(10));
+
