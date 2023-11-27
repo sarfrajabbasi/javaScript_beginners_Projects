@@ -315,3 +315,14 @@ function logicalOper(val1, val2) {
 // test
 console.log(logicalOper(10,"10"));
 
+function test1(val){
+  if(val < 10){
+    return "less then 10"
+  }
+  if(val < 20){
+    return "less then 20"
+  }
+
+  return "inside the both"
+}
+test1(12)
