@@ -303,3 +303,15 @@ function logicalOper(val1, val2) {
 
 // test
 console.log(logicalOper(10,"10"));
+
+
+// And/Or operator
+
+function logicalOper(val1, val2) {
+  // return val1 >= val2 ? "Not-Equal" : "Equal";
+  return val1 <= val2 && typeof val1 === typeof val2 ? "Equal" : "Not-Equal";
+}
+
+// test
+console.log(logicalOper(10,"10"));
+
